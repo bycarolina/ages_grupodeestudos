@@ -35,3 +35,22 @@ Each folder contains the exercises, projects, or experiments developed during th
 .
 ├── ...
 └── README.md
+```
+
+The structure will be updated as new activities are completed.
+
+## Technologies
+
+Technologies and tools used throughout the study group may include:
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Git & GitHub
+- REST APIs
+- AI development tools
+
+## Goals
+
+The main goal of this repository is to document my learning process and practical experience with frontend development, while building projects that demonstrate the concepts explored throughout the program.
