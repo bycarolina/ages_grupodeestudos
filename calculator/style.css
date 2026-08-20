@@ -1,0 +1,135 @@
+/* Remove os espaçamentos padrão do navegador e facilita o controle dos tamanhos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Centraliza a calculadora na página e define o fundo */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f86db;
+}
+
+
+/* Define o tamanho, a aparência e a sombra do container da calculadora */
+.calculator {
+    width: 356px;
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2b36;
+    border-radius: 48px;
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.35),
+        0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Organiza o símbolo de igual e os valores exibidos no display */
+.display {
+    width: 288px;
+    height: 86px;
+    padding: 0 22px 0 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:50px 0px 20px 0px;
+}
+
+
+/* Deixa o símbolo do display mais discreto */
+.equals-sign {
+    color: #77737f;
+    font-size: 20px;
+}
+
+
+/* Organiza a operação e o resultado verticalmente e alinhados à direita */
+.display-values {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+
+/* Diferencia visualmente a operação anterior */
+.previous-operation {
+    color: #85818b;
+    font-size: 17px;
+}
+
+
+/* Destaca o resultado atual */
+.current-operation {
+    color: #f5f5f5;
+    font-size: 30px;
+}
+
+
+/* Organiza os botões em quatro colunas de mesmo tamanho */
+.keyboard {
+    width: 292px;
+    height: 368px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+
+/* Define a aparência compartilhada por todos os botões */
+.button {
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background-color: #34323e;
+    color: #f2f2f2;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+
+/* Destaca o botão CE com a cor de destaque da interface */
+.clear-entry {
+    color: #9d54ff;
+}
+
+
+/* Diferencia os operadores matemáticos dos botões numéricos */
+.operator {
+    background-color: #593095;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+/* Aplica um tom diferente ao primeiro operador */
+.divide {
+    background-color: #4c287d;
+}
+
+
+/* Destaca o botão responsável por mostrar o resultado */
+.equals {
+    background-color: #8748eb;
+    font-size: 25px;
+}
+
+
+/* Cria uma pequena resposta visual ao pressionar um botão */
+.button:active {
+    transform: scale(0.95);
+}
