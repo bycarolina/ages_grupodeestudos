@@ -46,10 +46,11 @@ body {
 }
 
 
-/* Deixa o símbolo do display mais discreto */
+/* Define a aparência do sinal de igual */
 .equals-sign {
     color: #77737f;
-    font-size: 20px;
+    font-size: 40px;
+    align-self: flex-end;
 }
 
 
@@ -63,16 +64,16 @@ body {
 
 
 /* Diferencia visualmente a operação anterior */
-.previous-operation {
+.operation {
     color: #85818b;
     font-size: 17px;
 }
 
 
 /* Destaca o resultado atual */
-.current-operation {
+.result {
     color: #f5f5f5;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
@@ -121,8 +122,7 @@ body {
     background-color: #4c287d;
 }
 
-
-/* Destaca o botão responsável por mostrar o resultado */
+/* Destaca o botão de igual com a cor de destaque da interface */
 .equals {
     background-color: #8748eb;
     font-size: 25px;
